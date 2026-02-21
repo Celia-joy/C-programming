@@ -1,6 +1,7 @@
 #include <stdio.h>
 //base case
 int natural (int number){
+	// Checking if a number is out of the interval less than 0 or greater than 49
 	if(number <0 || number> 49){
 	return 1;
 }
