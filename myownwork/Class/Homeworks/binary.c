@@ -1,6 +1,6 @@
 int decimalToBinary(int n){
 	if( n == 0){
-		return n;
+		return 0;
 	}
 	decimalToBinary(n/2);
 	printf("%d", n%2);

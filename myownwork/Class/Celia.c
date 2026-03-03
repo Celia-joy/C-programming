@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-	int increment(int x)
-	{int i = x++ ;return i;}
+	int increment(int x){
+	    int i = x++ ;
+	    return i;
+	}
 
 int main () {
 	printf("%d", increment(5));

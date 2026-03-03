@@ -4,7 +4,7 @@ int main (){
 	int*ptr = &myAge;
 	printf("%d\n", myAge);
 	printf("%p\n", &myAge);
-	printf("%p", ptr);
+	printf("%p ", ptr);
 	printf("%d\n", *ptr);
 	return 0;
 }

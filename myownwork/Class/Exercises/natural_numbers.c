@@ -1,19 +1,20 @@
 #include <stdio.h>
 //base case
 int natural (int number){
-	if(number <0 || number> 49){
-	return 1;
-}
-else {
-	for(number =0; number <= 49; number++){
-		return natural(number);
+	if (number < 0){
+		return 0;
 	}
-}
+	else if(number > 49){
+		return 0;
+	}
+    else {
+    	printf("%d, ", number);
+		return natural(number+1);
+	}
 }
 
 int main (){
-	int number;
 	printf("The first 50 natural number are: \n");
-	printf("%d" ,natural(number) );
+	natural(0) ;
 	return 0;
 }

@@ -13,7 +13,6 @@ int main(){
 	int number;
 	printf("Enter a number: ");
 	scanf("%d", &number);
-	long int factorial = f(number);
-	printf("\n The factorial of %d is %d", number, factorial);
+	printf("\n The factorial of %d is %d", number, f(number));
 	return 0;
 }

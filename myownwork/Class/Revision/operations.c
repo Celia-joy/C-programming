@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main (){
 	int x, y, z;
-	int a = 23;
-	int b = 22;
+	int a = 48;
+	int b = 49;
 	int c = (a>b)?b:a;
 	printf("Enter the first number: ");
 	scanf("%d", &x);

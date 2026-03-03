@@ -13,9 +13,7 @@ int main(){
 	printf("Enter the first positive number:  ");
 	scanf("%d", &a);
 	printf("Enter the second positive number:  ");
-	scanf("%d", &b);
-	int result = gcd(a,b);
-	
+	scanf("%d", &b);	
 		if (a == 0 || b== 0){
 		printf("The GCD of 0 and 0 is undefined");
 		return 1;
@@ -25,7 +23,7 @@ int main(){
 		return 1;
 	}
 	else {
-		printf("The GCD of %d and %d is %d ", a, b, result);
+		printf("The GCD of %d and %d is %d ", a, b, gcd(a,b));
 	}
 	return 0;
 }
