@@ -115,3 +115,13 @@ int main (){
 	}
 	return 0;
 }*/
+
+//11.
+int main (){
+	int x= 10;
+    int *p = &x;
+    int **pp = &p;
+    printf("%p\n", pp);
+    printf("%d\n", **pp);
+    return 0;	
+}
