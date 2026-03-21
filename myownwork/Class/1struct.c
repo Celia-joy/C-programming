@@ -145,7 +145,7 @@ struct student {
 
 //You don't have to write struct again 
 //Ex:
- int main () {
+ /*int main () {
 	typedef struct {
 		char name[10];
 		int age;
@@ -156,7 +156,7 @@ struct student {
 	printf("%d\n", S.age);
 	printf("%s\n", S.location);
 	return 0;
-}
+}*/
 
 
 
