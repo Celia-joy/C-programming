@@ -158,8 +158,9 @@ int main (){
 	printf("%.2f in Fahrenheit is %.2f\n",C, F);
 	return 0;
 }*/
+
 //11.
-int main () {
+/*int main () {
 	int arr[10][10];
 	for (int rows=0; rows<10; rows++){
 		for (int cols=0; cols<=rows; cols++){
@@ -176,7 +177,167 @@ int main () {
 			printf("%d" ,arr[rows][cols]);
 		}
 		printf("\n");
-	}
-	
+	}	
 	return 0;
+}*/
+
+//12.
+
+/*int isPrime (int n){
+	if (n<2){
+		return 0;
+	}
+	if (n==2){
+		return 1;
+	}
+	if (n%2 == 0){
+		return 0;
+	}
+	for (int i = 3; i<=n/2; i++){
+		if (n%i == 0){
+			return 0;
+		}
+	}
+	return 1;
 }
+
+	int main (){
+		int n;
+		printf("Enter any positive number: ");
+		scanf("%d", &n);
+		if(isPrime(n)){
+			printf("%d is prime", n);
+		}
+		else {
+			printf("%d is not prime", n);
+		}
+		return 0;
+	}*/
+	
+//13.
+
+/*int main (){
+	int n;
+	printf("Enter the size of the array: ");
+	scanf("%d", &n);
+	int arr[n];
+	for (int i=0; i<n; i++){
+		printf("Enter element %d: ", i+1);
+		scanf("%d", &arr[i]);		
+	}
+	int min = arr[0];
+	for (int i= 0; i<n; i++){
+		if (arr[i] < min){
+			min = arr[i];
+		}		
+	}
+	printf("The smallest number is %d", min);
+	return 0;
+}*/
+/*int minimum (int arr[], int size){
+	int min = arr[0];
+	for (int i=0; i<size; i++){
+		if (arr[i] < min){
+			min = arr[i];
+		}
+	}
+	return min;
+}
+int main () {
+	int n;
+	printf("Enter the size of the array: ");
+	scanf("%d", &n);
+	int arr[n];
+	for (int i=0; i<n; i++){
+		printf("Enter element %d: ", i+1);
+		scanf("%d", &arr[i]);		
+	}
+	printf("The smallest number is: %d", minimum(arr, n));
+	return 0;	
+}*/
+
+//14.
+
+/*int gcd(int a, int b){
+	if (b==0){
+		return a;
+	}
+	return gcd(b, a%b);
+}
+int main () {
+	int a, b;
+	printf("Enter any 1st positive number: ");
+	scanf("%d", &a);
+	printf("Enter any 2nd positive number: ");
+	scanf("%d", &b);
+	printf("The gcd of %d and %d is %d", a,b, gcd(a,b));
+	return 0;
+}*/
+
+//15. 
+/*int maximum(int arr[], int size){
+	int max = arr[0];
+	for (int i=1; i<size; i++){
+		if (arr[i] > max){
+		    max= arr[i];
+		}
+	}
+	return max;
+}
+int main () {
+	int n;
+	printf("Enter the size of the array: ");
+	scanf("%d", &n);
+	int arr[n];
+	for (int i=0; i<n; i++){
+		printf("Enter element %d: ", i+1);
+		scanf("%d", &arr[i]);		
+	}
+	printf("The largest number in the array is %d ", maximum(arr, n));
+	return 0;
+}*/
+
+//16.
+/*void reverse (char str, int id){
+	if (str[id] == '\0'){
+		return;
+	}
+	reverse(str, id+1);
+	printf("%c", str[id])
+	
+}
+int main (){
+	char str[100];
+	printf("Enter the string: ");
+	scanf("%s", str);
+	printf("The original string is: ", str);
+	printf("The reversed string is: ");
+	reverse(str, 0);
+	return 0;	
+}*/
+
+//17. 
+
+int decimalToBinary(int n){
+	if(n == 0){
+		return 0;
+	}
+	decimalToBinary(n/2);
+	printf("%d", n%2);
+}
+ int main (){
+ 	int n;
+ 	printf("Enter a number: ");
+ 	scanf("%d", &n);
+ 	if (n == 0){
+ 		printf("0");
+	 }
+	 else{
+	 	decimalToBinary(n);	 	
+	 }
+ 	return 0;
+ }
+
+
+	
+		
