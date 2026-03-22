@@ -150,12 +150,33 @@ int main (){
 
 //10. 
 
-int main (){
+/*int main (){
 	float  C,F;
-	printf("Enter temperature in degree Celcius :");
+	printf("Enter temperature in degree Celcius: ");
 	scanf("%f", &C);
 	F = (C*9/5)+32;
 	printf("%.2f in Fahrenheit is %.2f\n",C, F);
 	return 0;
+}*/
+//11.
+int main () {
+	int arr[10][10];
+	for (int rows=0; rows<10; rows++){
+		for (int cols=0; cols<=rows; cols++){
+			if (cols == 0 || cols == rows){
+				arr[rows][cols] = 1;
+			}
+			else {
+				arr[rows][cols] = arr[rows-1][cols-1] + arr[rows-1][cols];
+			}
+		}
+	}
+	for (int rows=0; rows<10; rows++){
+		for(int cols=0; cols<=rows; cols++){
+			printf("%d" ,arr[rows][cols]);
+		}
+		printf("\n");
+	}
+	
+	return 0;
 }
-
