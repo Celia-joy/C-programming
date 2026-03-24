@@ -2,7 +2,7 @@
 //1.
 /*int main () {
 	int A[2][2] = {{5, 6}, {7, 8}};
-	int B[2][3] = {{1, 2}, {3, 4}};
+	int B[2][2] = {{1, 2}, {3, 4}};
 	int C[2][2];
 	 for (int i =0; i<2; i++){
 	 	for(int j =0; j<2; j++){
@@ -98,7 +98,7 @@ int main (){
 	 	scanf("%d", &A[i]);
 	 }
 	 int sum = 0;
-	 for (int i=0; i<n;i++){
+	 for (int i=0; i<n; i++){
 	 	sum += A[i];
 	 }
 	 printf("The sum of elements in the array is : %d", sum);
@@ -298,12 +298,12 @@ int main () {
 }*/
 
 //16.
-/*void reverse (char str, int id){
+/*void reverse (char str[], int id){
 	if (str[id] == '\0'){
 		return;
 	}
 	reverse(str, id+1);
-	printf("%c", str[id])
+	printf("%c", str[id]);
 	
 }
 int main (){
@@ -316,9 +316,10 @@ int main (){
 	return 0;	
 }*/
 
+
 //17. 
 
-int decimalToBinary(int n){
+/*int decimalToBinary(int n){
 	if(n == 0){
 		return 0;
 	}
@@ -336,7 +337,58 @@ int decimalToBinary(int n){
 	 	decimalToBinary(n);	 	
 	 }
  	return 0;
+ }*/
+ 
+//18.
+ /*int main (){
+ 	int n;
+ 	printf("Enter the size of the array: ");
+ 	scanf("%d", &n);
+ 	int arr[n];
+ 	for(int i=0; i<n; i++){
+ 		printf("Enter the element %d: ", i+1);
+ 		scanf("%d", &arr[i]);
+	}
+	for(int i=0; i<n; i++){
+		for(int j=0; j<n-i-1; j++){
+			if (arr[j] < arr[j+1]){
+				int temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+			}
+		}
+	}
+	printf("The five largest number are:\n ");
+	for(int i=0; i<5; i++){
+		printf("%d\n", arr[i]);
+	}
+	return 0;
+ }*/
+ int main (){
+ 	int n;
+ 	printf("Enter the size of the array: ");
+ 	scanf("%d", &n);
+ 	int arr[n];
+ 	for(int i=0; i<n; i++){
+ 		printf("Enter the element %d:  ", i+1);
+ 		scanf("%d", &arr[i]);
+	}
+	for (int i=0; i<n; i++){
+		for(int j=0; j<n-i-1;j++){
+			if(arr[j]>arr[j+1]){
+				int temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+			}
+		}
+	}
+	printf("The five smallest number in the array are:\n");	
+	for (int i=0; i<5; i++){
+		printf("%d", arr[i]);
+	}
+	return 0;
  }
+
 
 
 	
