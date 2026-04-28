@@ -84,6 +84,7 @@ int main (){
 	return 0;	
 }*/
 
+
 //4.
 /*enum Priority {
 	Low =10,
@@ -128,7 +129,7 @@ int main (){
 
 //6.
 /*enum Days{
-	Monday=1,
+	Mon=1,
 	Tue,
 	Wed,
 	Thur,
@@ -145,10 +146,11 @@ void printDays(enum Days day){
 	}
 }
 int main(){
-	enum Days day = Monday;
+	enum Days day = Mon;
 	printDays(day);
 	return 0;
 }*/
+
 
 //7.
 
@@ -371,7 +373,7 @@ int main (){
 	return 0;
 }*/
 //15.
-enum AppConfig{
+/*enum AppConfig{
 	MODE_DEVELOPMENT,
 	MODE_STANDING,
 	MODE_PRODUCTION
@@ -396,7 +398,7 @@ int main (){
 	scanf("%d", &mode);
 	logMessage(mode);
 	return 0;	
-}
+}*/
 
 
 
