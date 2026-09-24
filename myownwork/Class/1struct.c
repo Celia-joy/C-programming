@@ -7,8 +7,11 @@
 	int age;
 	char location[10];
 };*/
-	
-
+/*struct student{
+	char name[20];
+	int age;
+	char location[10];
+};*/
 //2. How do you access structure 
 //members using the dot (.) operator?
 
@@ -25,13 +28,28 @@
 	printf("Location: %s", s.location);
 	return 0;
 }*/
-
+/*int main (){
+	struct student s;
+	printf("Enter a name: ");
+	scanf("%s", s.name);
+	printf("Enter your age: ");
+	scanf("%d", &s.age);
+	printf("Enter your location: ");
+	scanf("%s", s.location);
+	printf("Your name, age and location are : %s, %d, %s", s.name, s.age, s.location);
+	return 0;
+}*/
 //3. What are the different ways to initialize 
 //a structure variable at the time of declaration?
 
 /*struct student s {"Celia", 15, "Huye"};
 struct student s {.name = "Alice", .age = 15, .location = "Huye"};*/
-
+/*struct student s{"Celia", 15, "Huye"}
+struct student s{
+	.name = "Celia",
+	.age = 15,
+	.location = "Huye"
+};*/
 // 4. How do you create an array to store details of 10 students?
 
 /*struct student S[10] {
@@ -47,12 +65,25 @@ struct student s {.name = "Alice", .age = 15, .location = "Huye"};*/
 	{"Seraphin", 15, "Huye"},
 	
 }*/
+/*struct student S[10]{
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"},
+	{"IHIRWE", 15, "Huye"}	
+};*/
 
 //5. How do you find the total memory 
 //size occupied by a structure using sizeof?
 
 /*struct Student s1;
 printf("Size of struct: %zu bytes\n", sizeof(s1));*/
+
 
 //6.How do you access structure members 
 //using the arrow (->) operator?
@@ -91,8 +122,8 @@ printf("Size of struct: %zu bytes\n", sizeof(s1));*/
 	return 0;	
 }*/
 //8.  How do you define a structure within another structure?
-/*#include <string.h>
-int main () {
+#include <string.h>
+/*int main () {
 	struct Address {
     char street[100];
     char city[50];

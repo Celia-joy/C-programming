@@ -1,6 +1,6 @@
 #include <stdio.h>
 //1.
-enum Color{
+/*enum Color{
 		RED,
 		BLUE,
 		GREEN
@@ -9,16 +9,16 @@ int main(){
 	enum Color current = BLUE;
 	printf("%d", current);
 	return 0;	
-}
+}*/
 
 //2.
-/*enum Month{
+enum Month{
 	JAN=1,
 	FEB,
 	MAR,
 	APR
 };
-int main (){
+/*int main (){
 	printf("%d\n", JAN);
 	printf("%d\n", FEB);
 	printf("%d\n", MAR);
@@ -26,7 +26,7 @@ int main (){
 }*/
 
 //3.
-/*enum Grade {
+enum Grade {
 	A,
 	B,
 	C,
@@ -47,4 +47,4 @@ int main (){
 		printf("Try harder");		
 	}
 	return 0;
-}*/
+}

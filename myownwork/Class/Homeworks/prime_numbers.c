@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main (){
+/*int main (){
 	int i;
 	int n;
 	printf("Enter any number: ");
@@ -17,7 +17,7 @@ int main (){
 		printf("%d is prime", n);
 	}
 	return 0;
-}
+}*/
 /*int isPrime (int n, int i){
 	if(n<= 1){
 		return 0;
@@ -43,4 +43,29 @@ int main (){
 	}
 	return 0;
 }*/
+int isPrime(int n, int i){
+	if(n<=1){
+		return 0;
+	}
+	if(n==i){
+		return 1;
+	}
+	if(n%i == 0){
+		return 0;
+	}
+	return isPrime(n, i+1);
+}
+int main (){
+	int n;
+	int i;
+	printf("Enter any number: ");
+	scanf("%d", &n);
+	if(isPrime(n,2 )){
+		printf("%d is prime",n);
+	}
+	else{
+		printf("%d is not prime", n);
+	}
+	return 0;
+}
 
